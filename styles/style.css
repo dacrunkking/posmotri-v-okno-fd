@@ -13,11 +13,12 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed";
   font-size: 18px;
   background-color: #1b1919;
-  display: grid;
-  place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1,
@@ -58,7 +59,7 @@ ol {
   grid-template-columns: 711px 399px;
   align-items: flex-end; 
   gap: 30px;
-padding: 0px 0px 0px;
+  padding: 0px 0px 0px;
 }
 
 .result {
@@ -74,13 +75,13 @@ gap: 26px;
 }
 
 .search-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: start;
+  justify-content: space-between;
+    display: flex;
+    align-items: start;
 }
 
 .search-form__fieldset-title {
-  font-family: "Fira Sans", Condensed;
+  font-family: "Fira Sans Condensed";
 font-weight: 400;
 font-style: regular;
 font-size: 18px;
@@ -92,6 +93,8 @@ letter-spacing: 0%;
 .result__video-container {
   height: 386px;
   width: 711px;
+  position: relative;
+  margin-bottom: 10px;
   
 }
 
@@ -116,6 +119,7 @@ text-transform: uppercase;
   overflow-x: hidden; 
       display: grid;
     gap: 30px;
+    position: relative;
 }
 
 .result__video {
@@ -196,7 +200,7 @@ letter-spacing: 0%;
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans", Condensed;
+  font-family: "Fira Sans Condensed";
 font-weight: 400;
 font-style: regular;
 font-size: 18px;
@@ -235,7 +239,7 @@ display: -webkit-box;
 }
 
 .search-form__label-text {
-  font-family: "Fira Sans", Condensed;
+  font-family: "Fira Sans Condensed";
 font-weight: 400;
 font-style: regular;
 font-size: 18px;
@@ -250,18 +254,21 @@ letter-spacing: 0%;
 }
 
 .search-form__textfield {
-font-family: "Fira Sans", Condensed;
-  color: #fff;
-font-weight: 400;
-font-style: regular;
-font-size: 18px;
-line-height: 100%;
-letter-spacing: 0%;
-border: 2px solid #FFFFFF; 
-  border-left: none;
-  border-right: none;  
-  background-color: transparent;
-  appearance: none;
+font-family: "Fira Sans Condensed";
+    color: #fff;
+    font-weight: 400;
+    font-style: regular;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+    border: 2px solid #FFFFFF;
+    border-left: none;
+    border-right: none;
+    background-color: transparent;
+    appearance: none;
+    height: 35px;
+    padding-top: 7px;
+    width: 225px;
 }
 
 .search-form__label:focus {
@@ -290,6 +297,7 @@ outline: none;
   width: 100%;
   height: 100%;
   opacity: 0;
+  
 
 }
 
@@ -300,12 +308,14 @@ outline: none;
 
 
 .search-form__label:has(.search-form__checkbox):hover {
-  border-bottom: 1px solid white; 
+  border-bottom: 1px solid white;
+  cursor: pointer;
+ 
 }
 
 .button {
   border: solid white 1px;
-  font-family: "Fira Sans", Condensed;
+  font-family: "Fira Sans Condensed";
   color: white;
 font-weight: 700;
 font-style: bold;
@@ -320,7 +330,7 @@ background-color: transparent;
 .search-form__submit-button {
   width: 194px;
   height: 34px;
-  align-self: center;
+  align-self: end;
 }
 
 .more-button {
@@ -329,6 +339,8 @@ background-color: transparent;
 
 .button:hover {
     text-decoration: underline;
+    cursor: pointer;
+
 
 }
 
@@ -343,3 +355,4 @@ background-color: transparent;
 .button:focus-visible {
   outline: 5px solid white;
 }
+
